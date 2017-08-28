@@ -17,6 +17,7 @@
     <form action="" id="textfile">
         <input type="file" id="files" name="files[]" multiple/>
         Radius: <input id="slider" type="range" min="0" max = "50" value="5"/>
+        Current Radius: <label id="radius">5</label>
         Address:<input id="add" type="text"/>
         <button type="button" onclick="changeMarkers()">Submit</button>
     </form>
@@ -26,8 +27,7 @@
   </div>
 
   <script src="script.js"></script>
-  <script async defer
-  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBE1NvDIv6rFxR67AG9jQ8uVydVKksynRo	&callback=initMap">
-  </script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBE1NvDIv6rFxR67AG9jQ8uVydVKksynRo&libraries=geometry&callback=initMap"
+        async defer></script>
 </body>
 </html>
